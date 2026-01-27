@@ -36,7 +36,6 @@ data class DamageS2CPayload(val data: DamageData) : CustomPayload {
                 return
             }
 
-            VitalSignals.logger.debug("Successfully serialized DamageData for DamageS2CPayload.")
             buf.writeNbt(nbtData.result().get())
         }
 
@@ -66,7 +65,6 @@ data class DamageS2CPayload(val data: DamageData) : CustomPayload {
                 return DamageS2CPayload(DamageData())
             }
 
-            VitalSignals.logger.debug("Successfully deserialized DamageData for DamageS2CPayload.")
             return DamageS2CPayload(decodedData.result().get().first)
         }
 
