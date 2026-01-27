@@ -3,15 +3,15 @@
 	"id": "vital-signals",
 	"version": "${version}",
 	"name": "Vital Signals",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft mod that provides detailed, mod-friendly information about player status and events.",
 	"authors": [
-		"Me!"
+		"@Rainy-day-y"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Rainy-day-y/Vital-Signal",
+		"sources": "https://github.com/Rainy-day-y/Vital-Signal"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/vital-signals/icon.png",
 	"environment": "*",
 	"entrypoints": {
