@@ -1,9 +1,9 @@
-package cn.sweetberry.mcmod.vitalsignals.damage.event
+package cn.sweetberry.mcmod.vitalsignals.events.damage
 
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamageContext
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamagePhase
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamageContext
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamagePhase
 
-object DamageEventBus {
+object DamageEvent {
     private val listeners = mutableListOf<(DamageContext) -> Unit>()
 
     fun register(listener: (DamageContext) -> Unit) {

@@ -1,7 +1,7 @@
 package cn.sweetberry.mcmod.vitalsignals.mixin;
 
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamageContext;
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamageContextHolder;
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamageContext;
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamageContextHolder;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;

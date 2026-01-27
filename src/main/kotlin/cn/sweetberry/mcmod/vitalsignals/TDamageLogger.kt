@@ -1,7 +1,7 @@
 package cn.sweetberry.mcmod.vitalsignals
 
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamageContext
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamagePhase
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamageContext
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamagePhase
 import net.minecraft.world.Difficulty
 import org.slf4j.LoggerFactory
 

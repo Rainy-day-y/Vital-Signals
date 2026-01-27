@@ -1,8 +1,8 @@
 package cn.sweetberry.mcmod.vitalsignals.mixin;
 
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamageContext;
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamageContextHolder;
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamagePhase;
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamageContext;
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamageContextHolder;
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamagePhase;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;

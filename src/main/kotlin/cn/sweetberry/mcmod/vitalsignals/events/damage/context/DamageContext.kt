@@ -1,4 +1,4 @@
-package cn.sweetberry.mcmod.vitalsignals.damage.context
+package cn.sweetberry.mcmod.vitalsignals.events.damage.context
 
 import net.minecraft.entity.damage.DamageSource
 import net.minecraft.server.network.ServerPlayerEntity

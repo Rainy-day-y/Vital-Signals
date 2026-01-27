@@ -1,4 +1,4 @@
-package cn.sweetberry.mcmod.vitalsignals.damage.context
+package cn.sweetberry.mcmod.vitalsignals.events.damage.context
 
 enum class DamagePhase {
     CREATED,        // Context 刚创建

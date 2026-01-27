@@ -1,8 +1,8 @@
 package cn.sweetberry.mcmod.vitalsignals.mixin;
 
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamageContext;
-import cn.sweetberry.mcmod.vitalsignals.damage.context.DamageContextHolder;
-import cn.sweetberry.mcmod.vitalsignals.damage.event.DamageEventBus;
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamageContext;
+import cn.sweetberry.mcmod.vitalsignals.events.damage.context.DamageContextHolder;
+import cn.sweetberry.mcmod.vitalsignals.events.damage.DamageEvent;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -70,7 +70,7 @@ public class ServerPlayerEntityMixin implements DamageContextHolder {
 
         ctx.end();
 
-        DamageEventBus.INSTANCE.post(ctx);
+        DamageEvent.INSTANCE.post(ctx);
 
         ctx.reset();
     }
