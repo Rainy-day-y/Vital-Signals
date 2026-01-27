@@ -63,8 +63,10 @@ public class ServerPlayerEntityMixin implements DamageContextHolder {
         ctx.setAbsorbed(absorbed);
 
         float damageToHealth = ctx.getPreHealth() - finalHealth;  // 实际扣除的生命值
+        boolean canceled = !cir.getReturnValue();
         ctx.markFinalResolved();
         ctx.setFinalDamage(damageToHealth);
+        ctx.setCanceled(canceled);
 
         ctx.end();
 

@@ -192,6 +192,12 @@ class DamageContext {
             field = value
         }
 
+    var canceled: Boolean = false
+        set(value) {
+            requirePhase(DamagePhase.FINAL)
+            field = value
+        }
+
     // 重置上下文: RESETTING -> CREATED
     fun reset() {
         phase = DamagePhase.RESETTING
@@ -219,6 +225,7 @@ class DamageContext {
         absorbed = 0f
 
         finalDamage = 0f
+        canceled = false
         phase = DamagePhase.CREATED
     }
 }

@@ -14,6 +14,8 @@ object TDamageLogger {
         val timeSinceLast = (context.createdTime!! - lastTime) / 1_000_000
         logger.info("\n"+
             """Damage Event [${context.token ?: "no-token"}]:
+            |
+            | Cancelled: ${context.canceled}
             | 
             | Target: ${context.target?.name?.string ?: "unknown"}
             | Source: ${context.source?.name ?: "unknown"}

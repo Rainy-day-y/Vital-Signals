@@ -12,14 +12,7 @@ object VitalSignals : ModInitializer {
     private val logger = LoggerFactory.getLogger("vital-signals")
 
     override fun onInitialize() {
-        // DamageEventBus.register { TDamageLogger.logDamage(it) }
-        DamageEventBus.register { context ->
-            run {
-                logger.info(context.toString())
-
-//                ServerPlayNetworking.send(context.target, buf)
-            }
-        }
+        DamageEventBus.register { TDamageLogger.logDamage(it) }
         logger.info("Vital Signals mod initialized.")
     }
 }
