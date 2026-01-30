@@ -13,14 +13,14 @@ import net.minecraft.util.Identifier
 @JvmRecord
 data class DamageS2CPayload(val data: DamageData) : CustomPayload {
     override fun getId(): CustomPayload.Id<out CustomPayload> {
-        return ID
+        return PAYLOAD_ID
     }
 
     companion object {
-        val SUMMON_LIGHTNING_PAYLOAD_ID: Identifier =
+        val NAMESPACED_ID: Identifier =
             Identifier.of(VitalSignals.MOD_ID, "damage_event_s2c")
 
-        val ID = CustomPayload.Id<DamageS2CPayload>(SUMMON_LIGHTNING_PAYLOAD_ID)
+        val PAYLOAD_ID = CustomPayload.Id<DamageS2CPayload>(NAMESPACED_ID)
 
         fun toBuf(payload: DamageS2CPayload, buf: PacketByteBuf) {
             if (payload.data.phase == "UNKNOWN") {
